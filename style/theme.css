@@ -1,0 +1,74 @@
+
+.theme-white {
+    --header-color: #B6AE9F;
+    --footer-color: #B6AE9F;
+    
+    --text-title-color: #222831;
+    --text-color: #222831;
+
+    --nav-btn-hover: #5c6677;
+    --nav-btn-selected: #222831;
+
+    --bg-color: #FFF8EC;
+    --text-content-color: #222831;
+
+    --btn-color:  #B6AE9F;
+    --btn-hover-color:  #a09277;
+
+    --input-bg-color: #f9f9f9;
+
+    --text-success-color: #2E7D32;
+    --text-error-color: #C62828;
+
+    --card-bg-color: #daceb9;
+}
+
+.theme-dark {
+    --header-color: #1B1F27;
+    --footer-color: #1B1F27;
+
+    --text-title-color: #F5F7FA;
+    --text-color: #D6DAE1;
+    --text-content-color: #C5CBD6;
+
+    --nav-btn-hover: #2C3440;
+    --nav-btn-selected: #5B86FF;
+
+    --bg-color: #0F131A;
+    --surface-color: #161B22;
+    --border-color: #2A313C;
+
+    --btn-color: #1B1F27;
+    --btn-hover-color: #18243c;
+
+    --input-bg-color: #2C3440;
+
+    --text-success-color: #2E7D32;
+    --text-error-color: #C62828;
+
+    --card-bg-color: #28303e;
+}
+
+:root {
+    --header-color: #B6AE9F;
+    --footer-color: #B6AE9F;
+    
+    --text-title-color: #222831;
+    --text-color: #222831;
+
+    --nav-btn-hover: #5c6677;
+    --nav-btn-selected: #222831;
+
+    --bg-color: #FFF8EC;
+    --text-content-color: #222831;
+
+    --btn-color:  #B6AE9F;
+    --btn-hover-color:  #a09277;
+
+    --input-bg-color: #FFF8EC;
+
+    --text-success-color: #2E7D32;
+    --text-error-color: #C62828;
+
+    --card-bg-color: #B6AE9F;
+}

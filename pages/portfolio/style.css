@@ -1,0 +1,135 @@
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+section { 
+    max-width: 70%; 
+    padding: 10px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.card {
+    max-width: 480px;
+    width: 320px;
+    height: 360px;
+    flex-basis: 320px;
+    
+    border-radius: 8px;
+    overflow: hidden;
+    flex-grow: 1;
+
+    color: var(--text-color);
+    background-color: var(--card-bg-color);
+}
+
+.card.ghost {
+    height: 0px;
+    padding: 0px;
+}
+
+.card .top {
+    width: 100%;
+    height: 40%;
+
+    background-color: var(--header-color);
+
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .top img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .bottom {
+    width: 100%;
+    height: 60%;
+}
+
+.card .bottom .description { 
+    padding: 15px;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card .bottom .description h3 {
+    margin-bottom: 5px;
+}
+
+.card .bottom .description span {
+    text-align: justify;
+}
+
+.card .bottom .wrapper-buttons svg {
+    width: 32px;
+    height: 32px;
+    fill: var(--text-color);
+}
+
+.card .bottom .wrapper-buttons {
+    padding: 15px;
+    height: 30%;
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.card .btn {
+    color: var(--text-color);
+    text-decoration: none;
+    background-color: var(--btn-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.card .btn:hover { 
+    background-color: var(--btn-hover-color);
+}
+
+.card .btn.hidden {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    section {
+        width: 90%;
+        max-width: 90%; 
+        justify-content: center;
+    }
+    .card {
+        flex-grow: 1;
+    }
+} 
+
+@media (max-width: 600px) {
+    section {
+        width: 100%;
+        max-width: 100%; 
+    } 
+    .card {
+        flex-grow: 1;
+    }
+}

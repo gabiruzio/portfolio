@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gabiru</title>
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/theme.css"> 
+    <script src="js/theme.js"></script>
+    <script src="js/language.js"></script>
+    <script src="js/core.js"></script>
+    <script src="js/form.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <button onclick="theme_on_click()" id="btn-theme">
+                <svg>
+                    <use id="icon-dark" href="assets/icons/moon.svg#main"></use>
+                    <use id="icon-white" class="hidden" href="assets/icons/sun.svg#main"></use>
+                </svg>
+            </button>
+            <div class="dropdown">
+                <button onclick="dropdown_on_click()" data-l="lang" id="btn">PT</button>
+                <div id="menu" class="content">
+                    <a onclick="lang_en()" href="#">EN</a>
+                    <a onclick="lang_pt()" href="#">PT</a>
+                </div>
+            </div>
+            <h1>Gabiru</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a data-l="about-me" href="#" id="btn-about-me" data-d="about-me" onclick="set_page_on_click(this)">sobre mim</a></li>
+                <li><a data-l="education" href="#" id="btn-education" data-d="education" onclick="set_page_on_click(this)">formação</a></li>
+                <li><a data-l="portfolio" href="#" id="btn-portfolio" data-d="portfolio" onclick="set_page_on_click(this)">portifólio</a></li>
+                <li><a data-l="contact" href="#" id="btn-contact" data-d="contact" onclick="set_page_on_click(this)">contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+    </main>
+    <footer>
+        <span data-l="footer-1">
+            © 2026 — Desenvolvido por Gabriel Ortiz.
+        </span>
+        <span data-l="footer-2">    
+            Este site foi criado como parte de um projeto acadêmico, com foco em desenvolvimento web e aplicações.
+        </span>
+        <span data-l="footer-3">
+            Todos os direitos reservados.
+        </span>
+    </footer>
+</body>
+</html>
